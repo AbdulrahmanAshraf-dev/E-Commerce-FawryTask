@@ -24,8 +24,8 @@ Welcome! This is a simple e-commerce system built in Java, designed to show how 
 Here's a quick example of how you might use the system in your code:
 
 ```java
-Cheese cheese = new Cheese("Cheese", 100, 10, LocalDate.now().plusDays(5), 0.4);
-Biscuits biscuits = new Biscuits("Biscuits", 150, 5, LocalDate.now().plusDays(2), 0.7);
+Cheese cheese = new Cheese("Cheese", 100, 10, false, 0.4);
+Biscuits biscuits = new Biscuits("Biscuits", 150, 5, true, 0.7);
 TV tv = new TV("TV", 5000, 3, 10.0);
 Mobile mobile = new Mobile("Mobile", 2000, 5);
 ScratchCard scratchCard = new ScratchCard("ScratchCard", 50, 100);
