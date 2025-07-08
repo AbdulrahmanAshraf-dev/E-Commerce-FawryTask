@@ -24,17 +24,23 @@ Welcome! This is a simple e-commerce system built in Java, designed to show how 
 Here's a quick example of how you might use the system in your code:
 
 ```java
-Cheese cheese = new Cheese("Cheese", 100, 10, false, 0.4);
-Biscuits biscuits = new Biscuits("Biscuits", 150, 5, true, 0.7);
-TV tv = new TV("TV", 5000, 3, 10.0);
-Mobile mobile = new Mobile("Mobile", 2000, 5);
-ScratchCard scratchCard = new ScratchCard("ScratchCard", 50, 100);
+ Cheese cheese = new Cheese("Cheese", 100, 10, false,  0.5);
 
-Customer customer = new Customer("Ali", 1000);
-Cart cart = new Cart();
-cart.add(cheese, 2);
-cart.add(biscuits, 1);
-cart.add(scratchCard, 1);
+        Biscuits biscuits = new Biscuits("Biscuits", 50, 5, true, 0.3);
+
+        TV tv = new TV("TV", 15000, 3, 9.0);
+
+        Mobile mobile = new Mobile("Mobile", 8000, 7);
+
+        ScratchCard scratchCard = new ScratchCard("ScratchCard", 50, 150);
+
+        Customer customer = new Customer("Abdulrahman", 20000);
+
+        Cart cart = new Cart();
+        cart.add(biscuits, 5);
+        cart.add(tv, 1);
+        cart.add(scratchCard, 2);
+
 
 new CheckoutService().checkout(customer, cart);
 ```
@@ -43,18 +49,18 @@ And here's what you'll see in the console:
 
 ```
 ** Shipment notice **
-2x Cheese 400g
-1x Biscuits 700g
-Total package weight 1.1kg
+5x Biscuits 300g
+1x TV 9000g
+Total package weight 10.5kg
 ** Checkout receipt **
-2x Cheese 200
-1x Biscuits 150
-1x ScratchCard 50
+5x Biscuits 250
+1x TV 15000
+2x ScratchCard 100
 ----------------------
-Subtotal 400
+Subtotal 15350
 Shipping 30
-Amount 430
-Customer balance 570
+Amount 15380
+Customer balance after payment: 4620
 ```
 
 ## Assumptions & Notes
