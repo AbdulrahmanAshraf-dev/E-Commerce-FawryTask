@@ -13,10 +13,10 @@ public class main {
 
         ScratchCard scratchCard = new ScratchCard("ScratchCard", 50, 100);
 
-        Customer customer = new Customer("Abdulrahman", 1000);
+        Customer customer = new Customer("Abdulrahman", 20000);
 
         Cart cart = new Cart();
-        cart.add(cheese, 2);
+        cart.add(biscuits, 2);
         cart.add(tv, 3);
         cart.add(scratchCard, 1);
 

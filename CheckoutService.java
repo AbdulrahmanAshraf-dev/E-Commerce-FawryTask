@@ -33,7 +33,7 @@ public class CheckoutService {
 
         double total = subtotal + shipping;
         if (customer.getBalance() < total) {
-            throw new IllegalStateException("Customer's balance is insufficient.");
+            throw new IllegalStateException("Customer's balance is Not Enough.");
         }
 
         customer.deduct(total);
