@@ -71,3 +71,5 @@ Customer balance 570
 ---
 
 Feel free to play around, extend it, or use it as a base for your own e-commerce ideas. If you have questions or want to add features, just jump in and start coding!
+![Screenshot 2025-07-08 211912](https://github.com/user-attachments/assets/7dd2606e-ae5c-4d70-babf-d94ab1eecb7a)
+![Screenshot 2025-07-08 211911](https://github.com/user-attachments/assets/24673979-4505-4d94-a1c0-9a5496877c54)
